@@ -1,8 +1,25 @@
 ---
 en:
+  activerecord:
+    models:
+      category:
+        one: Category
+        others: Categories
+      category:
+        one: Task
+        others: Tasks
   categories:
     form:
       description: Description
       name: Name
     new_category: New Category
+  common:
+    back: Atras
   hello: Hello world
+  tasks:
+    form:
+      category: Category
+      description: Description
+      due_date: Due date
+      name: Name
+    new_task: New task
