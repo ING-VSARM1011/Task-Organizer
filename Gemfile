@@ -28,13 +28,9 @@ gem "jbuilder"
 
 gem 'hamlit'
 
-gem 'hamlit-rails'
-
 gem 'simple_form'
 
-gem 'pry'
-
-gem 'pry-doc'
+gem 'annotate'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
@@ -58,6 +54,8 @@ group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
   gem "byebug", platforms: %i[ mri mswin mswin64 mingw x64_mingw ]
+  gem 'pry'
+  gem 'pry-doc'
 end
 
 group :development do
@@ -71,5 +69,6 @@ group :development do
   # gem "spring"
 
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
+  gem 'hamlit-rails'
 end
 
