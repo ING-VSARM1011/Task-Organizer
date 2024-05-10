@@ -5,7 +5,7 @@ en:
       category:
         one: Category
         others: Categories
-      category:
+      taks:
         one: Task
         others: Tasks
   categories:
@@ -14,8 +14,11 @@ en:
       name: Name
     new_category: New Category
   common:
-    back: Atras
+    back: Back
   hello: Hello world
+  taks:
+    errors:
+      invalid_due_date: Invalid due date
   tasks:
     form:
       category: Category
