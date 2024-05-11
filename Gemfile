@@ -36,6 +36,8 @@ gem 'rails-i18n'
 
 gem 'devise'
 
+gem 'cocoon'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 

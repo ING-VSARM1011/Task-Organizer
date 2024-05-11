@@ -8,6 +8,13 @@
     = f.input :description, label: t('.description')
     = f.input :due_date, label: t('.due_date')
     = f.association :category, label: t('.category')
+    #addParticipants
+      = link_to_add_association f, :participating_user, 'data-association-insertion-node' => 'participants' .'participants-container', 'data_turbolinks' => false do
+      agregar participante
+    .participants
+      = f.simple_fields_for :participating_users do |g|
+        = render 'participating_user_fields', f: g
+        .participant-container
 
   .form-actions
     = f.button :submit

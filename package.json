@@ -1,8 +1,10 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "cocoon": "^0.1.1",
     "jquery": "^3.7.1",
     "popper.js": "^1.16.1",
-    "roboto-fontface": "^0.10.0"
+    "roboto-fontface": "^0.10.0",
+    "webpack": "^5.91.0"
   }
 }
