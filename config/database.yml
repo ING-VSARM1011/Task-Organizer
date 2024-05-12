@@ -14,7 +14,7 @@ development:
   database: task-organizer
   host: localhost
   user: postgres
-  password: 1xTHREVUDEER
+  password: 123456
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -24,7 +24,7 @@ test:
   database: task-organizer
   host: localhost
   user: postgres
-  password: 1xTHREVUDEER
+  password: 123456
 
 production:
   <<: *default
