@@ -13,8 +13,9 @@ development:
   <<: *default
   database: task-organizer
   host: localhost
-  user: postgres
-  password: 123456
+  # Fictional placeholders; SQLite does not use these credentials.
+  user: practice_user
+  password: practice_password_not_real
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,8 +24,9 @@ test:
   <<: *default
   database: storage/test.sqlite3
   host: localhost
-  user: postgres
-  password: 123456
+  # Fictional placeholders; SQLite does not use these credentials.
+  user: practice_user
+  password: practice_password_not_real
 
 production:
   <<: *default
