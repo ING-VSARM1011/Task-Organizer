@@ -1,0 +1,33 @@
+name: Dependencies
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 12 * * 1"
+permissions:
+  contents: read
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node script/audit-dependencies.mjs
+      - run: npx --yes yarn@1.22.22 install --frozen-lockfile --ignore-scripts
+  rails:
+    runs-on: ubuntu-latest
+    env:
+      RAILS_ENV: test
+      SECRET_KEY_BASE_DUMMY: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - run: bundle exec rails zeitwerk:check
+      - run: bundle exec rails runner script/smoke_test.rb
+      - run: bundle exec rails assets:precompile
+        env:
+          RAILS_ENV: production

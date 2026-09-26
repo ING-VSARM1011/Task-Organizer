@@ -33,3 +33,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# JavaScript dependencies are restored from yarn.lock.
+/node_modules/
+/yarn-error.log
