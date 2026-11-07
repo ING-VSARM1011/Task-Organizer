@@ -30,7 +30,7 @@ gem 'hamlit'
 
 gem 'simple_form'
 
-gem 'annotaterb', '~> 4.25', group: :development, require: false
+gem 'annotaterb', '~> 4.26', group: :development, require: false
 
 gem 'rails-i18n', '~> 8.1'
 

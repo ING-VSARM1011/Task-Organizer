@@ -75,7 +75,7 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    annotaterb (4.25.0)
+    annotaterb (4.26.0)
       activerecord (>= 6.0.0)
       activesupport (>= 6.0.0)
     base64 (0.3.0)
@@ -132,7 +132,7 @@ GEM
     jbuilder (2.15.1)
       actionview (>= 7.0.0)
       activesupport (>= 7.0.0)
-    json (3.0.2)
+    json (3.1.0)
     logger (1.7.0)
     loofah (2.25.2)
       crass (~> 1.0.2)
@@ -147,9 +147,9 @@ GEM
     method_source (1.1.0)
     mini_mime (1.1.5)
     mini_portile2 (2.8.9)
-    minitest (6.0.6)
+    minitest (6.1.0)
       drb (~> 2.0)
-      prism (~> 1.5)
+      prism (>= 1.5, < 3)
     msgpack (1.8.5)
     net-imap (0.6.7)
       date
@@ -180,7 +180,13 @@ GEM
     pp (0.6.4)
       prettyprint
     prettyprint (0.2.0)
-    prism (1.9.0)
+    prism (2.1.0)
+    prism (2.1.0-aarch64-linux-gnu)
+    prism (2.1.0-arm-linux-gnu)
+    prism (2.1.0-arm64-darwin)
+    prism (2.1.0-x64-mingw-ucrt)
+    prism (2.1.0-x86_64-darwin)
+    prism (2.1.0-x86_64-linux-gnu)
     pry (0.16.0)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -280,7 +286,7 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2026.4)
       tzinfo (>= 1.0.0)
-    uri (1.1.1)
+    uri (1.1.2)
     useragent (0.16.11)
     warden (1.2.9)
       rack (>= 2.0.9)
@@ -305,7 +311,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  annotaterb (~> 4.25)
+  annotaterb (~> 4.26)
   bootsnap
   byebug
   cocoon
