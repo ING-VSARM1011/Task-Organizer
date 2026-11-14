@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.8",
+    "bootstrap": "^5.3.9",
     "cocoon": "^0.1.1",
     "jquery": "^3.7.1",
     "roboto-fontface": "^0.10.0",
